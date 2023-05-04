@@ -1,0 +1,369 @@
+.topnav {
+    overflow: hidden;
+    background-color:#FFC107;
+    display: flex;
+    height: 80px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topnavcontainer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.topnav a, .topnav img {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    height:48px;
+    width:48px;
+    padding: 0 12px;
+}
+
+.searchbar{
+    float: left;
+    width: 50%;
+}
+
+.searchbar input [type=text]{
+    height: 30px;
+    width: 30%;
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.topnav a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+.active{
+    background-color: #4CAF50;
+    color: white;
+}
+
+:root{
+    --card_width: 250px;
+    --card_border_radius: 16px;
+    --row_increment: 10px;
+    --card_small: 26;
+    --card_medium: 33;
+    --card_large: 45;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.container{
+    margin: 0;
+    padding: 0;
+    width: 80vw;
+    display: flex;
+    position: absolute;
+    background-color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+}
+
+.fileuploadbutton{
+    margin: 0;
+    padding: 0;
+}
+
+.postform{
+    float: right;
+}
+.pin_container{
+    margin: 0;
+    padding: 0;
+    width: 80vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, var(--card_width));
+    grid-auto-rows: var(--row_increment);
+    justify-content: center;
+    background-color: white;
+}
+
+.card{
+    padding: 0px;
+    display: block;
+    position: relative;
+    margin: 15px 10px;
+    overflow: hidden;
+    border-radius: var(--card_border_radius);
+    background-color: grey;
+}
+
+.card img{
+    height: 200%;
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    right: -9999px;
+    bottom: -9999px;
+    margin: auto;
+}
+.card_small{
+    grid-row-end: span var(--card_small);
+}
+
+.card_medium{
+    grid-row-end: span var(--card_medium);
+}
+
+.card_large{
+    grid-row-end: span var(--card_large);
+}
+
+.wrapper {
+    width: 944px;
+    height: 617px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 60px;
+    box-shadow: inset 0px 5px 5px -5px rgba(0, 0, 0, 0.75),
+            0px 5px 5px -5px rgba(0, 0, 0, 0.75),
+            -5px 0px 5px -5px rgba(0, 0, 0, 0.75),
+            5px 0px 5px -5px rgba(0, 0, 0, 0.75),
+            0px 5px 5px -5px rgba(0, 0, 0, 0.75);
+    margin-top: 50px;
+}
+
+.photodiv{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 30%;
+        margin-left: 32px;
+}
+
+.location{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.01em;
+        margin-top: 16px;
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #000000;
+}
+
+.locationicon{
+        display: inline-block;
+        vertical-align: top;
+}
+
+.image-container {
+    width: 100%;
+    height: 442px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.image {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+
+.title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-top: 11px;
+    /* line-height: 1.5em; */
+    height: 49px;
+    /* 3 lines of text with 1.5em line-height */
+    overflow: hidden;
+    text-transform: capitalize;
+}
+
+.commentdiv{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 55%;
+    margin-left: 71px;
+    margin-right: 51px;
+}
+
+.profile-pic-container {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* This creates the circular shape */
+    overflow: hidden;
+    /* This hides any part of the image that exceeds the circular shape */
+}
+
+.profile-pic-container img {
+    width: 100%;
+    /* This ensures the image fills the container */
+    height: 100%;
+    /* This ensures the image fills the container */
+    object-fit: cover;
+    /* This scales the image to cover the entire container */
+}
+
+#fileuploadbutton{
+    background-color: #d9d9d9;
+    width: 463px;
+    height: 525px;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+#fileuploadbutton input{
+  display: none;
+}
+
+#fileuploadbutton label{
+    height: 496px;
+    width: 429px;
+    font-family: 'Arial, Helvetica, sans-serif';
+    font-size: 22px;
+    display: inline-block;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px dashed black;
+    margin-top: 12px;
+}
+
+#fileuploadbutton ion-icon{
+    margin-top: 35%;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+#fileuploadbutton label:hover{
+    cursor: pointer;
+    color: #FFC107;
+    border: 1px dashed #FFC107;
+}
+
+.postinput{
+    display: inline-block;
+    margin-left: 40%;
+    width: 100%;
+}
+
+.postinput .input-box{
+    margin: 20px 0 12px 0;
+    width: calc(100%/2-20px);
+    margin-bottom: 15px;
+}
+
+.postinput .input-box input{
+    height: 45px;
+    width: 160%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.postinput .input-box textarea{
+    height: 200px;
+    width: 160%;
+    outline: none;
+    resize: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    padding-top: 10px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.postinput .input-box .details{
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.postinput .input-box input:focus,
+.postinput .input-box input:valid{
+    border-color: #9b59b6;
+}
+
+.postinput .input-box textarea:focus,
+.postinput .input-box textarea:valid{
+    border-color: #9b59b6;
+}
+
+.container form .button{
+    margin-left: 75%;
+    width: 100%;
+    height: 45px;
+}
+
+form .button input{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+form .button input:hover{
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+    cursor: pointer;
+}

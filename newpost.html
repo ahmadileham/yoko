@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Travel</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <nav>
+            <div>
+              <ol>
+                <li>
+                  <a href=""><ion-icon name="home-outline"></ion-icon></a>
+                </li>
+                <li>
+                  <a href=""><ion-icon name="add-outline"></ion-icon></a>
+                </li>
+              </ol>
+            </div>
+            <div>
+              <input type="search" placeholder="Search" />
+              <span class="fa fa-search"></span>
+            </div>
+            <ol>
+              <li>
+                <a href="login.html"
+                  ><ion-icon name="notifications-outline"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a href=""><img class="circle" src="images/greg.jpg" alt="" /></a>
+              </li>
+              <li>
+                <a href=""><ion-icon name="analytics-outline"></ion-icon></a>
+              </li>
+            </ol>
+          </nav>
+        </head>
+        <br><br><br>
+    <body>
+            <!-- <div class="topnav">
+                <div class="topnavcontainer">
+                    <div class="topnavleft">
+                        <a href="#"><img src="icons/homeicon.png" alt="Home Icon"></a>
+                        <a href="#"><img src="icons/addposticon.png" alt="Add Post Icon"></a>
+                    </div>
+                    <div class="searchbar">
+                        <form action="/search">
+                            <input type="text" placeholder="Search" name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                    <div class="topnavright">
+                        <a href="#"><img src="icons/bellicon.png" alt="Notification Icon"></a>
+                        <a href="#"><img src="icons/profileicon.png" alt="Add Post Icon"></a>
+                        <a href="#"><img src="icons/analyticsicon.png" alt="Analytics Icon"></a>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="container">
+                <div id="fileuploadbutton">
+                    <input type="file" id="file"/>
+                    <label for="file"><ion-icon name="cloud-upload-outline"></ion-icon><br>Drag and drop or click<br>to upload</label>
+                </div>
+
+                <form action="#">
+                    <div class="postinput">
+                        <div class="input-box">
+                            <span class="details">Title</span>
+                            <input type="text" placeholder="Add a title" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Description</span>
+                            <textarea type="text" placeholder="Write a description" required></textarea>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Location</span>
+                            <input type="text" placeholder="Where was this taken?" required>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Publish Post"
+                    </div>
+                </form>
+            </div>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
