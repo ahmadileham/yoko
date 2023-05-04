@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="update user profile.css" />
+    <link rel="shortcut icon" type="x-icon" href="icon.png">
+    <title>View User Profile</title>
+    <nav>
+      <div>
+        <ol>
+          <li>
+            <a href=""><ion-icon name="home-outline"></ion-icon></a>
+          </li>
+          <li>
+            <a href=""><ion-icon name="add-outline"></ion-icon></a>
+          </li>
+        </ol>
+      </div>
+      <div>
+        <input type="search" placeholder="Search" />
+        <span class="fa fa-search"></span>
+      </div>
+      <ol>
+        <li>
+          <a href="login.html"
+            ><ion-icon name="notifications-outline"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a href=""><img class="circle" src="background.jpeg" alt="" /></a>
+        </li>
+        <li>
+          <a href=""><ion-icon name="analytics-outline"></ion-icon></a>
+        </li>
+      </ol>
+    </nav>
+  </head>
+  <br><br><br><br><br><br><br>
+  <body>
+    <p style="margin-left: 400px; font-size: 25px;"><strong>Profile Details</strong></p>
+    <div class="box">
+      <br><br><br>
+      <p class="faded" style="text-align: left;">Photo</p>
+      <a href=""><img id="Profile"src="Profile picture.jpeg" style="margin: 0; margin-top: 20px;" alt=""></a>
+      <p class="faded" style="text-align: left; margin-top: 20px;;">About</p>
+      <textarea rows="5" cols="63" style="border-radius: 10px; padding: 10px; margin-top: 20px;">Tell something...</textarea>
+      <p class="faded" style="text-align: left; margin-top: 20px;">Username</p>
+      <input type="text" id="username" name="username" style="margin-top: 20px; border-radius: 5px; width: 500px; border: 1px solid">
+      <p class="faded" style="text-align: left; margin-top: 20px;">Email*</p>
+      <input type="email" id="email" name="email" style="margin-top: 20px; border-radius: 5px; width: 500px; border: 1px solid">
+      <p class="faded" style="text-align: left; margin-top: 20px;">Password*</p>
+      <input type="password" id="password" name="password" style="margin-top: 20px; border-radius: 5px; width: 500px; border: 1px solid black;"><br>
+      <button type="submit" class="btn" style="margin-top: 20px;">Save</button>
+      <button type="submit" class="btn" style="margin-top: 20px;float: right;">Deactivate</button>
+
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
