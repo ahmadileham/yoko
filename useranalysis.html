@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>View User Profile</title>
+    <title>Document</title>
+    <nav>
+        <div>
+          <ol>
+            <li>
+              <a href=""><ion-icon name="home-outline"></ion-icon></a>
+            </li>
+            <li>
+              <a href=""><ion-icon name="add-outline"></ion-icon></a>
+            </li>
+          </ol>
+        </div>
+        <div>
+          <input type="search" placeholder="Search" />
+          <span class="fa fa-search"></span>
+        </div>
+        <ol>
+          <li>
+            <a href="login.html"
+              ><ion-icon name="notifications-outline"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href=""><img class="circle" src="images/greg.jpg" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><ion-icon name="analytics-outline"></ion-icon></a>
+          </li>
+        </ol>
+      </nav>
+</head>
+<br><br><br><br><br>
+
+<body>
+    <p id="engage"><strong>Engagement <br> <br><img src="images/greg.jpg" id="Profile"alt=""></strong></p>
+    <p class="faded">@nigga </p> <br><br><br>
+    <div class="charts">
+      <div class="chart">
+        <p class="faded">Statistics <br></p>
+        <p> <strong>Profile Views</strong></p>
+        <canvas id="myChart"></canvas></div>
+      <div class="chart">
+        <p class="faded">Community <br></p>
+        <p> <strong>Rating Ratios</strong></p>
+        <canvas id="myChart2"></canvas></div>
+      </div>
+    </div>
+    <div class="charts">
+      <div class="chart" style="height: 700px">
+        <p class="faded">Based on accounts engaged <br></p>
+        <p> <strong>Followers and Non-followers</strong></p>
+        <p class="faded" id="total" style="font-size: 30px; ">Total Count</p>
+        <p id="followers"><strong>178</strong></p>
+        <canvas id="myChart3"></canvas>
+      </div>
+    </div>
+    <div>
+    </div>
+    
+</body>
+<script src="my_chart.js"></script>
+</html>
