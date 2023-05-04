@@ -203,6 +203,9 @@ ion-icon {
     height: 30px;
   }
 
+ion-icon:hover{
+    color: white;
+}
 
 
 
