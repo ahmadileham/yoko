@@ -82,10 +82,17 @@ body{
     margin: 0;
     padding: 0;
     width: 80vw;
+    display: flex;
     position: absolute;
-    background-color: green;
+    background-color: white;
     left: 50%;
     transform: translateX(-50%);
+    margin-top: 50px;
+}
+
+.fileuploadbutton{
+    margin: 0;
+    padding: 0;
 }
 
 .postform{
@@ -246,28 +253,117 @@ body{
     /* This scales the image to cover the entire container */
 }
 
-.btn-file {
-    position: relative;
-    overflow: hidden;
+#fileuploadbutton{
+    background-color: #d9d9d9;
+    width: 463px;
+    height: 525px;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
 }
 
-.btn-file input[type=file] {
-    position: absolute;
-    top: 0;
-    right: 0;
-    min-width: 100%;
-    min-height: 100%;
-    font-size: 100px;
-    text-align: right;
-    filter: alpha(opacity=0);
-    opacity: 0;
+#fileuploadbutton input{
+  display: none;
+}
+
+#fileuploadbutton label{
+    height: 496px;
+    width: 429px;
+    font-family: 'Arial, Helvetica, sans-serif';
+    font-size: 22px;
+    display: inline-block;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px dashed black;
+    margin-top: 12px;
+}
+
+#fileuploadbutton ion-icon{
+    margin-top: 35%;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+#fileuploadbutton label:hover{
+    cursor: pointer;
+    color: #FFC107;
+    border: 1px dashed #FFC107;
+}
+
+.postinput{
+    display: inline-block;
+    margin-left: 40%;
+    width: 100%;
+}
+
+.postinput .input-box{
+    margin: 20px 0 12px 0;
+    width: calc(100%/2-20px);
+    margin-bottom: 15px;
+}
+
+.postinput .input-box input{
+    height: 45px;
+    width: 160%;
     outline: none;
-    background: white;
-    cursor: inherit;
-    display: block;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
 }
 
-input[readonly] {
-  background-color: white !important;
-  cursor: text !important;
+.postinput .input-box textarea{
+    height: 200px;
+    width: 160%;
+    outline: none;
+    resize: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    padding-top: 10px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.postinput .input-box .details{
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.postinput .input-box input:focus,
+.postinput .input-box input:valid{
+    border-color: #9b59b6;
+}
+
+.postinput .input-box textarea:focus,
+.postinput .input-box textarea:valid{
+    border-color: #9b59b6;
+}
+
+.container form .button{
+    margin-left: 75%;
+    width: 100%;
+    height: 45px;
+}
+
+form .button input{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+form .button input:hover{
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+    cursor: pointer;
 }
