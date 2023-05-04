@@ -244,6 +244,8 @@ body{
     /* This ensures the image fills the container */
     object-fit: cover;
     /* This scales the image to cover the entire container */
+}
+
 .btn-file {
     position: relative;
     overflow: hidden;
