@@ -52,7 +52,7 @@
 
 
 input[type=search]{
-    background: url(search-outline.svg) no-repeat scroll left;
+    background: url(images/search-outline.svg) no-repeat scroll left;
     width: 750px;
     height: 33px;
     padding-left: 50px;
