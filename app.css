@@ -16,9 +16,6 @@
     align-items: center;
 }
 
-.topnavleft{
-    
-}
 .topnav a, .topnav img {
     float: left;
     display: block;
@@ -81,6 +78,19 @@ body{
     background-color: white;
 }
 
+.container{
+    margin: 0;
+    padding: 0;
+    width: 80vw;
+    position: absolute;
+    background-color: green;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.postform{
+    float: right;
+}
 .pin_container{
     margin: 0;
     padding: 0;
@@ -94,7 +104,6 @@ body{
     grid-auto-rows: var(--row_increment);
     justify-content: center;
     background-color: white;
-
 }
 
 .card{
@@ -235,4 +244,28 @@ body{
     /* This ensures the image fills the container */
     object-fit: cover;
     /* This scales the image to cover the entire container */
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+input[readonly] {
+  background-color: white !important;
+  cursor: text !important;
 }
