@@ -395,6 +395,21 @@ body{
     grid-row-end: span var(--card_large);
 }
 
+.wrapper {
+    width: 944px;
+    height: 617px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 60px;
+    box-shadow: inset 0px 5px 5px -5px rgba(0, 0, 0, 0.75),
+            0px 5px 5px -5px rgba(0, 0, 0, 0.75),
+            -5px 0px 5px -5px rgba(0, 0, 0, 0.75),
+            5px 0px 5px -5px rgba(0, 0, 0, 0.75),
+            0px 5px 5px -5px rgba(0, 0, 0, 0.75);
+    margin-top: 50px;
+}
 
 #fileuploadbutton{
     background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,209,67,1) 0%, hwb(22 33% 0%) 90% );
