@@ -6,6 +6,15 @@
     height: 35px;
     display: block;
 }
+body {
+    display:block;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('images/background.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
 #Profile{
     border-radius: 50% ;
