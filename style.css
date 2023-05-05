@@ -533,14 +533,14 @@ body{
     height: 100px;
 }
 
-#fileuploadbutton ion-icon:hover{
-    color: #FFC107;
-}
-
 #fileuploadbutton label:hover{
     cursor: pointer;
     color: #FFC107;
     border: 3px dashed #FFC107;
+}
+
+#fileuploadbutton label:hover ion-icon{
+    color: #FFC107;
 }
 
 .postinput{
