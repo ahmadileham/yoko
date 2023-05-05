@@ -7,6 +7,7 @@
     <title>Caption</title>
     <link rel="stylesheet" href="app.css">
     <link rel="shortcut icon" type="x-icon" href="images/icon.png">
+    <script src="vp.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 </head>
 
@@ -31,6 +32,15 @@
         </div>
     </div>
 
+    <div class="backbox" onclick="navigateTo('home.html')">
+        <ion-icon class="back" name="arrow-back-circle"></ion-icon>
+        
+        <div class="fy">
+            For You
+        </div>
+    </div>
+        
+
     <div class="wrapper">
 
         <div class="photodiv">
@@ -51,21 +61,136 @@
         </div>
 
         <div class="commentdiv">
-
             <div class="poster">
-                <div class="profile-pic-container">
+
+                <div class="profile-pic-container" onclick="navigateTo('userprof.html')">
                     <img src="images/greg.jpg" alt="Profile Photo">
                 </div>
+
+                <div>
+                    <h2 onclick="navigateTo('userprof.html')" class="username">John Doe James</h2>
+                    <div class="ratingdisplay">
+                            <div class="ratings">
+                                <ion-icon class="dummyrating" name="star"></ion-icon>
+                                <ion-icon class="dummyrating" name="star"></ion-icon>
+                                <ion-icon class="dummyrating" name="star"></ion-icon>
+                                <ion-icon class="dummyrating" name="star"></ion-icon>
+                                <ion-icon class="unrateddummy" name="star-outline"></ion-icon>
+                            </div>
+
+                            <div class="numberofratings">(562)</div>
+                    </div>
+                    
+                </div>
+
+                <div class="star_rating">
+                    <button class="star">&#9734;</button>
+                    <button class="star">&#9734;</button>
+                    <button class="star">&#9734;</button>
+                    <button class="star">&#9734;</button>
+                    <button class="star">&#9734;</button>
+                </div>
+
+                <script>
+                    const allStars = document.querySelectorAll('.star');
+
+                        allStars.forEach((star, i) => {
+                            star.onclick = function () {
+                                let current_star_level = i + 1;
+
+                                allStars.forEach((star, j) => {
+                                    if (current_star_level >= j + 1) {
+                                        star.innerHTML = '&#9733';
+                                    } else{
+                                        star.innerHTML = '&#9734';
+                                    }
+
+
+                                })
+                            }
+                        })
+                </script>
+
             </div>
 
-            <div class="description">
+            <div class="desc">
+                The spectacular mirage occurs when the sand and silt
+                sediments on the ocean floor get sucked down under the
+                influence of stronger underwater currents between the opening
+                of the reefs. The scene resembles the flush of a waterfall
+                cascading into a massive underwater pit.
+            </div>
+            
+            <div class="commentbox">
+                    <div class="cmtholder">
+                        <div class="cmt">
+                            <div class="profile-pic-containercmt" onclick="navigateTo('userprof.html')">
+                                <img src="images/greg.jpg" alt="Profile Photo">
+                            </div>
 
+                            <div>
+                                <p class="cmttext">The spectacular mirage occurs when the sand and silt
+                                sediments on the ocean floor get sucked down under the
+                                influence of stronger underwater currents between the opening
+                                of the reefs. The scene resembles the flush of a waterfall
+                                cascading into a massive underwater pit.</p>
+                            </div>
+
+                        </div>
+
+                        <div class="cmt">
+                            <div class="profile-pic-containercmt" onclick="navigateTo('userprof.html')">
+                                <img src="images/greg.jpg" alt="Profile Photo">
+                            </div>
+                        
+                            <div>
+                                <p class="cmttext">The spectacular mirage occurs when the sand and silt
+                                    sediments on the ocean floor get sucked down under the
+                                    influence of stronger underwater currents between the opening
+                                    of the reefs. The scene resembles the flush of a waterfall
+                                    cascading into a massive underwater pit.</p>
+                            </div>
+                        
+                        </div>
+
+                        <div class="cmt">
+                            <div class="profile-pic-containercmt" onclick="navigateTo('userprof.html')">
+                                <img src="images/greg.jpg" alt="Profile Photo">
+                            </div>
+                        
+                            <div>
+                                <p class="cmttext">The spectacular mirage occurs when the sand and silt
+                                    sediments on the ocean floor get sucked down under the
+                                    influence of stronger underwater currents between the opening
+                                    of the reefs. The scene resembles the flush of a waterfall
+                                    cascading into a massive underwater pit.</p>
+                            </div>
+                        
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="newcommentbox">
+                        <div class="mydp">
+                            <div class="myprofile-pic-container">
+                                <img src="images/greg.jpg" alt="Profile Photo">
+                            </div>
+                        </div>
+
+                        <div>
+                            <input type="text" class="my-textfield" placeholder="Type your comment...">
+                        </div>
+
+                        <ion-icon class="send" name="send"></ion-icon>
+
+                    </div>
             </div>
 
-            <div class="comment">
-
-            </div>
+            
+            
         </div>
+
     </div>
         
 </body>
