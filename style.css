@@ -212,6 +212,9 @@ ion-icon {
     height: 30px;
   }
 
+ion-icon:hover{
+    color: white;
+}
 
 
 
@@ -325,9 +328,11 @@ body{
 .postform{
     float: right;
 }
+
 .pin_container{
     margin: 0;
     padding: 0;
+    padding-top: 15px;
     width: 80vw;
     position: absolute;
     left: 50%;
@@ -348,6 +353,11 @@ body{
     overflow: hidden;
     border-radius: var(--card_border_radius);
     background-color: grey;
+    box-shadow: inset 0px 5px 5px -5px rgba(0, 0, 0, 0.75),
+                    0px 5px 5px -5px rgba(0, 0, 0, 0.75),
+                    -5px 0px 5px -5px rgba(0, 0, 0, 0.75),
+                    5px 0px 5px -5px rgba(0, 0, 0, 0.75),
+                    0px 5px 5px -5px rgba(0, 0, 0, 0.75);
 }
 
 .card img{
@@ -359,6 +369,16 @@ body{
     bottom: -9999px;
     margin: auto;
 }
+
+.card img:hover{
+    -webkit-filter: brightness(60%);
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    -ms-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+}
+
 .card_small{
     grid-row-end: span var(--card_small);
 }
@@ -481,7 +501,7 @@ body{
 }
 
 #fileuploadbutton{
-    background-color: #d9d9d9;
+    background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,209,67,1) 0%, hwb(22 33% 0%) 90% );
     width: 463px;
     height: 525px;
     border-radius: 10px;
@@ -496,13 +516,19 @@ body{
 #fileuploadbutton label{
     height: 496px;
     width: 429px;
-    font-family: 'Arial, Helvetica, sans-serif';
     font-size: 22px;
     display: inline-block;
     align-items: center;
+    background-color: #f9f9f9;
     border-radius: 10px;
-    border: 1px dashed black;
+    border: 2px dashed black;
     margin-top: 12px;
+    box-shadow: inset 0px 5px 5px -5px rgba(0, 0, 0, 0.25),
+            0px 5px 5px -5px rgba(0, 0, 0, 0.75),
+            -5px 0px 5px -5px rgba(0, 0, 0, 0.75),
+            5px 0px 5px -5px rgba(0, 0, 0, 0.75),
+            0px 5px 5px -5px rgba(0, 0, 0, 0.75);
+
 }
 
 #fileuploadbutton ion-icon{
@@ -519,7 +545,7 @@ body{
 #fileuploadbutton label:hover{
     cursor: pointer;
     color: #FFC107;
-    border: 1px dashed #FFC107;
+    border: 3px dashed #FFC107;
 }
 
 .postinput{
@@ -544,6 +570,7 @@ body{
     font-size: 16px;
     border-bottom-width: 2px;
     transition: all 0.3s ease;
+    margin-top: 5px;
 }
 
 .postinput .input-box textarea{
@@ -558,6 +585,7 @@ body{
     font-size: 16px;
     border-bottom-width: 2px;
     transition: all 0.3s ease;
+    margin-top: 5px;
 }
 
 .postinput .input-box .details{
@@ -569,12 +597,12 @@ body{
 
 .postinput .input-box input:focus,
 .postinput .input-box input:valid{
-    border-color: #9b59b6;
+    border-color: #ff9153;
 }
 
 .postinput .input-box textarea:focus,
 .postinput .input-box textarea:valid{
-    border-color: #9b59b6;
+    border-color: #ff9153;
 }
 
 .container form .button{
@@ -592,11 +620,11 @@ form .button input{
     border: none;
     font-size: 18px;
     font-weight: 500;
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,209,67,1) 0%, hwb(22 33% 0%) 90% );
 }
 
 form .button input:hover{
-    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+    background: radial-gradient( circle farthest-corner at 90% 10%,  rgba(255,209,67,1) 0%, rgba(255,145,83,1) 90% );
     cursor: pointer;
 }
 
