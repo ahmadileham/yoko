@@ -31,8 +31,8 @@ body {
 
 .faded{
     font-family: 'Montserrat',sans-serif;
-    font-weight: 200;
-    color: gray;
+    font-weight: bold;
+    color: #5A5A5A;
     font-size: 13px;
     text-align: center;
 }
