@@ -608,13 +608,14 @@ body{
     border-color: #ff9153;
 }
 
-.container form .button{
-    width: 100%;
+.container form .buttonsubmit{
+    width: 69%;
     height: 45px;
     margin-bottom: 10px;
+    display: inline-block;
 }
 
-form .button input{
+form .buttonsubmit input{
     height: 100%;
     width: 100%;
     border-radius: 20px;
@@ -626,10 +627,32 @@ form .button input{
     background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,209,67,1) 0%, hwb(22 33% 0%) 90% );
 }
 
-form .button input:hover{
+form .buttonsubmit input:hover{
     background: radial-gradient( circle farthest-corner at 90% 10%,  rgba(255,209,67,1) 0%, rgba(255,145,83,1) 90% );
     cursor: pointer;
 }
 
+.container form .buttoncancel{
+    width: 30%;
+    height: 45px;
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-right: 1px;
+}
 
+form .buttoncancel input{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    outline: none;
+    color: black;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    background: #E9E9E9;
+}
 
+form .buttoncancel input:hover{
+    cursor: pointer;
+}
+    
