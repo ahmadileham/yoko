@@ -314,7 +314,6 @@ body{
     width: 80vw;
     display: flex;
     position: absolute;
-    background-color: white;
     left: 50%;
     transform: translateX(-50%);
     margin-top: 50px;
@@ -333,7 +332,7 @@ body{
     margin: 0;
     padding: 0;
     padding-top: 15px;
-    width: 80vw;
+    width: 70vw;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -551,7 +550,10 @@ body{
 .postinput{
     display: inline-block;
     margin-left: 40%;
-    width: 100%;
+    width: 180%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px 15px 5px 15px;
 }
 
 .postinput .input-box{
@@ -562,7 +564,7 @@ body{
 
 .postinput .input-box input{
     height: 45px;
-    width: 160%;
+    width: 100%;
     outline: none;
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -575,7 +577,7 @@ body{
 
 .postinput .input-box textarea{
     height: 200px;
-    width: 160%;
+    width: 100%;
     outline: none;
     resize: none;
     border-radius: 5px;
@@ -606,9 +608,9 @@ body{
 }
 
 .container form .button{
-    margin-left: 75%;
     width: 100%;
     height: 45px;
+    margin-bottom: 10px;
 }
 
 form .button input{
