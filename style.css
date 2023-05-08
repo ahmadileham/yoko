@@ -473,6 +473,14 @@ body{
     0px 5px 5px -5px rgba(0, 0, 0, 0.75);
 }
 
+.postinput ion-icon{
+    color:red;
+    margin-top: 10px;
+    margin-bottom: -30px;
+    width: 30px;
+    height: 30px;
+    margin-left: 90%;
+}
 .postinput .input-box{
     margin: 20px 0 12px 0;
     width: calc(100%/2-20px);
